@@ -25,13 +25,8 @@
       body {
         margin: 0;
         overflow: hidden;
-
-  background-image: url('assets/purpledino_big_background_2048x1296.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
       }
-      #WebARRocksFaceCanvasAR, #WebARRocksFaceCanvasVideo {
+      #WebARRocksFaceCanvasAR, #WebARRocksFaceCanvasVideo, WebARRocksFaceCanvasBack {
         position: fixed;
         width: 100vw;
         top: 0;
@@ -39,17 +34,27 @@
         /* mirror the canvas: */
         transform: rotateY(180deg);
       }
+
       #WebARRocksFaceCanvasVideo {
         z-index: 0;
       }
-      #WebARRocksFaceCanvasAR {
+      #WebARRocksFaceCanvasBack {
         z-index: 1;
+        
+        background-image: url('assets/purpledino_big_background_2048x1296.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+      }
+      #WebARRocksFaceCanvasAR {
+        z-index: 2;
       }
     </style>
 
   </head>
   <body>
     <canvas width="600" height="600" id='WebARRocksFaceCanvasAR'></canvas>
+    <canvas width="600" height="600" id='WebARRocksFaceCanvasBack'></canvas>
     <canvas width="600" height="600" id='WebARRocksFaceCanvasVideo'></canvas>
   </body>
 </html>

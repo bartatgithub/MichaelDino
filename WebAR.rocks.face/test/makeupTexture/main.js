@@ -579,7 +579,7 @@ const SHAPEFACE = {
   textures: [{
     id: 'color',
     //// src: 'assets/makeup2.png'
-      src: 'assets/purpledino01_577x1024.png'
+      src: 'assets/purpledino_big_dino_2048x1296.png'
   }]
 }; // END SHAPEFACE
 

@@ -37,6 +37,8 @@
 
       #WebARRocksFaceCanvasVideo {
         z-index: 0;
+
+        display: block; 
       }
       #WebARRocksFaceCanvasBack {
         z-index: 1;
@@ -54,10 +56,23 @@
   </head>
   <body>
     <canvas width="600" height="600" id='WebARRocksFaceCanvasAR'></canvas>
+    
     <canvas width="600" height="600" id='WebARRocksFaceCanvasBack'></canvas>
-    <!--
+    
     <canvas width="600" height="600" id='WebARRocksFaceCanvasVideo'></canvas>
-    -->
+    
+<script>
+    function initialSetup() {
+  if (document.getElementById("WebARRocksFaceCanvasVideo") != null) {
+    setTimeout(function() {
+      document.getElementById('WebARRocksFaceCanvasVideo').style.display = 'none';
+    }, 4000);
+  }
+}
+
+initialSetup();
+  </script>
+    
   </body>
 </html>
  

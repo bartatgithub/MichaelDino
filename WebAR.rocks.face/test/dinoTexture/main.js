@@ -579,7 +579,7 @@ const SHAPEFACE = {
   textures: [{
     id: 'color',
     //// src: 'assets/makeup2.png'
-      src: 'assets/purpledino_big_dino_2048x2048_c256.png'
+    src: 'assets/purpledino_big_dino_2048x2048_c256.png'
   }]
 }; // END SHAPEFACE
 
@@ -609,6 +609,10 @@ function main(){
     callback: start,
     isFullScreen: true
   });
+
+  //// get Bounding Rect from canvasAR
+  let canvasARboundingClientRect = _canvasAR.getBoundingClientRect();
+  console.log(canvasARboundingClientRect);
 }
 
 

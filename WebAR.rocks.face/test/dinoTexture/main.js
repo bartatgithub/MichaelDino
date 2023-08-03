@@ -611,8 +611,8 @@ function main(){
   });
 
   //// get Bounding Rect from canvasAR
-  let canvasARboundingClientRect = _canvasAR.getBoundingClientRect();
-  console.log('canvasARrect: ', canvasARboundingClientRect);
+  //// let canvasARboundingClientRect = _canvasAR.getBoundingClientRect();
+  //// console.log('canvasARrect: ', canvasARboundingClientRect);
 }
 
 
